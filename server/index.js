@@ -15,7 +15,7 @@ connect();
 const app = express();
 app.use(
   cors({
-    origin: "https://employee-maanagement.vercel.app/",
+    origin: "https://employee-maanagement.vercel.app",
     credentials: true,
   })
 );
