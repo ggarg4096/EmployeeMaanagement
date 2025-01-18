@@ -21,7 +21,8 @@ import Setting from "./components/EmployeeDashboard/Setting";
 import Table from "./components/leave/Table";
 import Detail from "./components/leave/Detail";
 import Report from "./components/Report/ReportTable";
-
+// import dotenv from "dotenv";
+// dotenv.config();
 function App() {
   return (
     <BrowserRouter>
