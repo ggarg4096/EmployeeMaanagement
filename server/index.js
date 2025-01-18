@@ -12,7 +12,12 @@ import reportRouter from "./routes/report.js";
 
 connect();
 const app = express();
-app.use(cors());
+app.use(
+  cors({
+    origin: "https://employee-maanagement.vercel.app/",
+    credentials: true,
+  })
+);
 app.use(express.json());
 app.use(express.static("public/uploads"));
 app.use("/api/auth", authRouter);
