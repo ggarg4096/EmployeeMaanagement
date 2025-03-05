@@ -74,14 +74,20 @@ const AdminSidebar = () => {
         </NavLink>
         <NavLink
           to="/admin-dashboard/setting"
-          className="flex items-center spase-x-4 py-2.5 px-4 rounded"
+          `${
+              isActive ? "bg-blue-500" : ""
+            } flex items-center spase-x-4  py-2.5 px-4 rounded`
+          }
         >
           <FaCogs />
           <span className="pl-2">Settings</span>
         </NavLink>
         <NavLink
           to="/admin-dashboard/report"
-          className="flex items-center spase-x-4 py-2.5 px-4 rounded"
+          `${
+              isActive ? "bg-blue-500" : ""
+            } flex items-center spase-x-4  py-2.5 px-4 rounded`
+          }
         >
           <FaFileAlt />
           <span className="pl-2">Report</span>
