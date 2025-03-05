@@ -74,7 +74,8 @@ const AdminSidebar = () => {
         </NavLink>
         <NavLink
           to="/admin-dashboard/setting"
-          `${
+          className={({ isActive }) =>
+            `${
               isActive ? "bg-blue-500" : ""
             } flex items-center spase-x-4  py-2.5 px-4 rounded`
           }
@@ -84,7 +85,8 @@ const AdminSidebar = () => {
         </NavLink>
         <NavLink
           to="/admin-dashboard/report"
-          `${
+          className={({ isActive }) =>
+            `${
               isActive ? "bg-blue-500" : ""
             } flex items-center spase-x-4  py-2.5 px-4 rounded`
           }
